@@ -1,0 +1,13 @@
+{% extends 'lbs_app/base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        Welcome {{ user.username }}!
+        <a href="{% url 'map' %}">map</a>
+    {% else %}
+        <a href="{% url 'login' %}">login</a>
+        <a href="{% url 'register' %}">register</a>
+    {% endif %}
+{% endblock %}

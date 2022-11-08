@@ -1,0 +1,17 @@
+{% extends 'lbs_app/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <h1>Login</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <label for="uname">Username</label><br>
+        <input type="text" id="uname" name="uname"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
