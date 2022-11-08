@@ -6,6 +6,7 @@
     {% if user.is_authenticated %}
         Welcome {{ user.username }}!
         <a href="{% url 'map' %}">map</a>
+        <a href="{% url 'logout' %}">logout</a>
     {% else %}
         <a href="{% url 'login' %}">login</a>
         <a href="{% url 'register' %}">register</a>

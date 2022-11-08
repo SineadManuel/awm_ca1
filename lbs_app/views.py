@@ -10,15 +10,8 @@ def register(request):
     return render(request, 'lbs_app/register.html')
 
 
-def login(request):
-    return render(request, 'lbs_app/login.html')
-
-
 def maps(request):
     return render(request, 'lbs_app/map.html')
 
-
-def logout(request):
-    return render(request, 'lbs_app/logout.html')
 
 

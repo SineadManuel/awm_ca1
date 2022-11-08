@@ -19,4 +19,6 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('lbs_app.urls')),
+    # Login/Logout paths
+    path("accounts/", include("django.contrib.auth.urls")),
 ]
