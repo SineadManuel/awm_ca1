@@ -7,13 +7,7 @@
 
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <label for="uname">Username</label><br>
-        <input type="text" id="uname" name="uname"><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password"><br>
-        <label for="password">Confirm Password</label><br>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Register</button>
+        {{ form }}
+        <button type="submit">Sign Up</button>
     </form>
 {% endblock %}
