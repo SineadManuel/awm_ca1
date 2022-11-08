@@ -1,7 +1,11 @@
+{% load leaflet_tags %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        {% leaflet_js %}
+        {% leaflet_css %}
         <title>{% block title %}Location Based Services Application{% endblock %}</title>
     </head>
     <body>
