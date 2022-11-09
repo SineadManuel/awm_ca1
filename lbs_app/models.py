@@ -1,4 +1,6 @@
+from django.contrib.auth import get_user_model
 from django.contrib.gis.db import models
+from django.contrib.auth.models import User
 
 
 class WorldBorder(models.Model):
@@ -22,3 +24,8 @@ class WorldBorder(models.Model):
     # Returns the string representation of the model.
     def __str__(self):
         return self.name
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
+    location = models.PointField(null=True)

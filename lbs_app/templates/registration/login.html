@@ -3,6 +3,22 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+    <style>
+        #nav {
+            background-color: #333;
+        }
+
+        .errorlist {
+            color: red;
+        }
+    </style>
+
+    <ul id="nav">
+        <li><a>Location Based Services Application</a></li>
+        <li><a href="{% url 'index' %}">home</a></li>
+        <li class="right"><a href="{% url 'register' %}">register</a></li>
+    </ul>
+
     <h1>Login</h1>
 
     <form method="post">

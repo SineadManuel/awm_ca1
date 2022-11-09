@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'lbs_app.apps.LbsAppConfig',
     'leaflet',
-    'crispy_forms'
+    'crispy_forms',
+    'rest_framework_gis',
 ]
 
 MIDDLEWARE = [
